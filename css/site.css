@@ -1,0 +1,12 @@
+body {
+        background: #bdbdbd;
+}
+
+header {
+        margin: 0px auto 0.32em;
+}
+
+header .logo {
+        display: block;
+        float: left;
+}
