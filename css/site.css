@@ -1,12 +1,52 @@
+img {
+        width: inherit;
+        max-width: 100%;
+        height: auto;
+}
+
 body {
         background: #bdbdbd;
 }
 
 header {
         margin: 0px auto 0.32em;
+        height: 17em;
+        background: white;
 }
 
 header .logo {
         display: block;
         float: left;
 }
+
+header #leftheader {
+        float: right;
+        margin: 20px 2.02em auto 2px;
+        text-align: center;
+        /*position: relative;*/
+}
+
+#content {
+        margin: 0px auto;
+        width: 100%;
+}
+
+.articles {
+        width: 80%;
+        background: white;
+        margin: 0px auto;
+        padding: 1em;
+}
+.articles h1 {
+        font-weight: strong;
+        font size: 2.9em;
+        color: red;
+        width: 100%;
+}
+
+.articles p {
+        font-size: 1em;
+}
+
+.footer {
+
