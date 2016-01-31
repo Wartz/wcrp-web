@@ -1,4 +1,3 @@
-/* Starting custom css */
 img {
         width: inherit;
         max-width: 100%;
@@ -8,7 +7,6 @@ img {
 body {
         background: #FFF;
 }
-
 
 header {
         margin: 0px auto 0.32em;
@@ -28,25 +26,20 @@ header #logo {
         /*position: relative;*/
 }
 
-#navbar {
-        padding: 0em;
-        margin: 0em auto;
-        width: 100%;
-}
-
-#navbar li {
-        display: inline;
-}
-
-
-content {
-        width: 100%;
+#content {
+        margin: 0px auto;
+        width: 74%;
         background-color: #fff;
 }
 
+#sidebar {
+        margin: 0px auto;
+        width: 24%;
+        background-color: #fff;
+}
 
 .article {
-        width: 90%;
+        width: 80%;
         background: white;
         margin: 0px auto;
         padding: 0em;
