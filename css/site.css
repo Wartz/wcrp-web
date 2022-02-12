@@ -1,3 +1,10 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* Starting custom css */
 img {
     width: inherit;
@@ -51,12 +58,13 @@ ol.main-menu a {
 }
 
 .header-main {
-    padding: 0em;
-    margin: 0em auto;
+    padding: 36px 24px 24px;
+    margin: 0 auto;
     position: relative;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1400px;
     display: flex;
+    flex-flow: row
 }
 
 .page-header-main {
