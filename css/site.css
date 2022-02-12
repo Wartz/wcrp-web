@@ -1,71 +1,118 @@
 /* Starting custom css */
 img {
-        width: inherit;
-        max-width: 100%;
-        height: auto;
+    width: inherit;
+    max-width: 100%;
+    height: auto;
 }
 
 body {
-        background: #FFF;
+    background: #FFF;
+    color: inherit;
 }
-
 
 header {
-        margin: 0px auto 0.32em;
-        height: 17em;
-        background: #FFF;
+    margin: 0em auto 0.32em;
+    background: #FFF;
+    color: inherit;
+    display: flex;
 }
-
-header #logo {
-        display: block;
-        float: left;
-}
-
-#leftheader {
-        float: right;
-        margin: 20px 2.02em auto 2px;
-        text-align: center;
-        /*position: relative;*/
-}
-
-#navbar {
-        padding: 0em;
-        margin: 0em auto;
-        width: 100%;
-}
-
-#navbar li {
-        display: inline;
-}
-
 
 content {
-        width: 100%;
-        background-color: #fff;
+    width: 100%;
+    background-color: #fff;
+    color: inherit;
 }
 
+footer {
+}
+
+ul,ol {
+    list-style: none;
+}
+
+ol.main-menu {
+    justify-content: space-around;
+    display: flex;
+    width: inherit;
+}
+
+ol.main-menu a {
+    padding: 10px 0;
+    display: block;
+    color: #1b1b1b;
+}
+
+.logo {
+    display: block;
+    float: left;
+    width: 396px;
+    height: inherit;
+    flex-basis: 450px;
+}
+
+.header-main {
+    padding: 0em;
+    margin: 0em auto;
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+}
+
+.page-header-main {
+    align-items: center;
+    display: grid;
+    position: relative;
+    top: inherit;
+    left: inherit;
+    background-color: #fff;
+    width: 100%;
+}
+
+.navbar {
+    position: relative;
+}
+
+.breadcrumb {
+    align-items: center;
+    background-color: #f4f4f4;
+    display: flex;
+    padding: 12px 24px;
+}
 
 .article {
-        width: 90%;
-        background: white;
-        margin: 0px auto;
-        padding: 0em;
+    width: 90%;
+    background: white;
+    margin: 0em auto;
+    padding: 0em;
+    color: inherit;
 }
+
 .article h1 {
-        font-weight: strong;
-        font size: 2.9em;
-        color: red;
-        width: 100%;
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: inherit;
+    color: red;
+    width: 100%;
 }
 
 .article p {
-        font-size: 1em;
+    font-size: 1em;
 }
 
-.footer {
+.nav-footer {
+    padding: 48px 24px;
+    position: relative;
+    background-color: #1b1b1b;
+    color: #fff;
+}
+
+.nav-footer ol a {
+    color: #fff;
+    padding: 10px 0;
+    display: block;
 }
 
 .wrapper {
-        width: 100%;
+    width: 100%;
 }
-
