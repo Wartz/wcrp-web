@@ -47,7 +47,7 @@ ol.main-menu {
 ol.main-menu a {
     padding: 10px 0;
     display: block;
-    color: #1b1b1b;
+    color: #1b2c3a;
 }
 
 .logo {
@@ -89,6 +89,10 @@ ol.main-menu a {
     padding: 12px 24px;
 }
 
+.breadcrumb a {
+    color: #1b2c3a;
+}
+
 .article {
     width: 90%;
     background: white;
@@ -128,7 +132,7 @@ ol.main-menu a {
 .nav-footer {
     padding: 48px 24px;
     position: relative;
-    background-color: #1b1b1b;
+    background-color: #1b2c3a;
     color: #fff;
 }
 
