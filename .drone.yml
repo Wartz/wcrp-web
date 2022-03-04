@@ -12,7 +12,9 @@ steps:
     password:
       from_secret: docker_password
     repo: jschlimmer/wcrp-web
-    tags: latest
+    tags: 
+      - latest
+      - 0.1
 
 trigger:
   branch: 
