@@ -1,0 +1,4 @@
+Push to gitea
+Drone actions builds a new image
+Log into docker.schlimmers.space
+Recreate wcrp-web docker instance
