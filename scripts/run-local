@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Cross-platform wrapper to run the local docker-compose helper.
+# On Windows this delegates to the PowerShell script; on Unix it runs the bash script.
+
+set -euo pipefail
+
+OS=$(uname 2>/dev/null || echo "windows")
+
+if [[ "$OS" == "windows" || "$OS" =~ MINGW|MSYS|CYGWIN ]]; then
+  # Running in Git Bash / MSYS on Windows; try to invoke PowerShell if available
+  if command -v pwsh >/dev/null 2>&1; then
+    pwsh -NoProfile -ExecutionPolicy Bypass -File "${BASH_SOURCE[0]%/*}/run-local.ps1" "$@"
+  elif command -v powershell.exe >/dev/null 2>&1; then
+    powershell.exe -NoProfile -ExecutionPolicy Bypass -File "${BASH_SOURCE[0]%/*}/run-local.ps1" "$@"
+  else
+    echo "PowerShell not found. Falling back to bash script." >&2
+    exec "${BASH_SOURCE[0]%/*}/run-local.sh" "$@"
+  fi
+else
+  # Unix-like environment
+  exec "${BASH_SOURCE[0]%/*}/run-local.sh" "$@"
+fi

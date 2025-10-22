@@ -22,13 +22,33 @@ Quick start (docker-compose)
 
 2. Open http://localhost:8080
 
-Local dev helper (PowerShell)
-There's a helper script at `scripts/run-local.ps1` that builds and runs the compose setup on Windows PowerShell.
+Local dev helper (cross-platform)
+This repo includes helper scripts to build and run the docker-compose setup locally.
+
+- `scripts/run-local` — cross-platform wrapper (auto-selects PowerShell on Windows or the bash script on Unix).
+- `scripts/run-local.sh` — bash script for Linux/macOS.
+- `scripts/run-local.ps1` — PowerShell script for Windows PowerShell / PowerShell Core.
+
+Usage examples:
+
+
+### Default (build + up)
+
+./scripts/run-local
+
+
+### Explicit actions
+
+./scripts/run-local up
+./scripts/run-local down
+./scripts/run-local restart
+
 
 CI / Deployment
 The project contains a `.drone.yml` pipeline which builds and pushes a Docker image to `jschlimmer/wcrp-web` when changes are pushed to the `master` branch.
 
 Notes & ideas
+
 - Contact form in `app/contact.html` is non-functional; consider integrating Formspree or a serverless function.
 - Add a small `index.html` improvement for SEO (meta tags) or add more pages under `app/thots/`.
 
