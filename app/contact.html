@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About Me: WCRP</title>
-        <link rel="stylesheet" type="text/css" href="css/site.css">
-    </head>
-    <body>
-        <h1>Hello world</h1>
-    </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — WCRP</title>
+  <meta name="description" content="Contact Wartz / WCRP. Send a message or find social links.">
+  <link rel="stylesheet" href="css/site.css" type="text/css">
+</head>
+<body>
+  <header class="header-main" role="banner" aria-label="Site header">
+    <a class="logo" href="/" title="WCRP home" aria-label="WCRP home">
+      <img src="media/logo/wcrp-svg.svg" alt="WCRP logo" width="396" height="auto">
+    </a>
+
+    <div class="page-header-main">
+      <nav class="main-menu" aria-label="Main navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="about.html">About me</a></li>
+          <li><a href="thoughts/">Thoughts</a></li>
+          <li><a href="contact.html" aria-current="page">Contact me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="index.html">Wartz's Contextual Reflections Page</a> &raquo;</li>
+      <li aria-current="page">Contact</li>
+    </ol>
+  </nav>
+
+  <main class="wrapper" role="main">
+    <section id="contact-content">
+      <div class="wrapper">
+        <article class="article">
+          <h1>Contact</h1>
+          <hr>
+          <p>If you'd like to get in touch, you can email me directly at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+
+          <h2>Contact form</h2>
+          <p>Optional form (non-functional without server-side handling):</p>
+
+          <form action="#" method="post" aria-label="Contact form">
+            <p>
+              <label for="name">Name</label><br>
+              <input id="name" name="name" type="text" placeholder="Your name">
+            </p>
+            <p>
+              <label for="email">Email</label><br>
+              <input id="email" name="email" type="email" placeholder="you@example.com">
+            </p>
+            <p>
+              <label for="message">Message</label><br>
+              <textarea id="message" name="message" rows="6" placeholder="Your message"></textarea>
+            </p>
+            <p>
+              <button type="submit">Send</button> — or send via <a href="mailto:your-email@example.com">email</a>.
+            </p>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="nav-footer" role="contentinfo">
+    <div class="content-container">
+      <ol class="link-list-wcrp">
+        <li><a href="about.html">About me</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ol>
+      <ol class="link-list-toao">
+        <li><a href="">Github</a></li>
+        <li><a href="">Socials</a></li>
+      </ol>
+      <p class="license">&copy; 2004-2024 WCRP and individual contributors.</p>
+    </div>
+  </footer>
+</body>
 </html>

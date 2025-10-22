@@ -5,169 +5,382 @@
   box-sizing: border-box;
 }
 
-/* Starting custom css */
+/* Responsive images */
 img {
-    width: inherit;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
+/* Base */
 body {
-    background: #FFF;
-    color: inherit;
+  background: #fff;
+  color: inherit;
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
 
+/* Header */
 header {
-    margin: 0em auto 0.32em;
-    background: #FFF;
-    color: inherit;
-    display: flex;
+  margin: 0 auto 0.32em;
+  background: #fff;
+  color: inherit;
 }
 
-content {
-    width: 100%;
-    background-color: #fff;
-    color: inherit;
-}
-
-
-ul,ol {
-    list-style: none;
-    padding: 0;
-}
-
-
-.main-menu {
-    background-color: #333; /* Example background color */
-    padding: 10px; /* Example padding */
-  }
-  
-  .main-menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .main-menu li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  .main-menu li:last-child {
-    margin-right: 0; /* Remove margin from the last item */
-  }
-  
-  .main-menu a {
-    color: white; /* Example text color */
-  }
-  
-
-ol.main-menu a {
-    padding: 10px 0;
-    display: block;
-    color: #1b2c3a;
-}
-
-.logo {
-    display: block;
-    float: left;
-    width: 396px;
-    height: inherit;
-    flex-basis: 450px;
-}
-
+/* Header layout: use flexbox */
 .header-main {
-    padding: 36px 24px 24px;
-    margin: 0 auto;
-    position: relative;
-    width: 100%;
-    max-width: 1400px;
-    display: flex;
-    flex-flow: row
+  padding: 36px 24px 24px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 16px;
 }
 
+/* Logo - rely on flexbox, remove float */
+.logo {
+  display: block;
+  flex: 0 0 396px;
+  max-width: 100%;
+  width: 396px;
+  height: auto;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Page header container */
 .page-header-main {
-    align-items: center;
-    display: grid;
-    position: relative;
-    top: inherit;
-    left: inherit;
-    background-color: #fff;
-    width: 100%;
+  align-items: center;
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  justify-content: flex-end;
 }
 
-.navbar {
-    position: relative;
+/* Navigation / menu */
+.main-menu {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 4px;
 }
 
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.main-menu li {
+  display: inline-block;
+  margin: 0;
+}
+
+.main-menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+/* Breadcrumb */
 .breadcrumb {
-    align-items: center;
-    background-color: #f4f4f4;
-    display: flex;
-    padding: 12px 24px;
+  align-items: center;
+  background-color: #f4f4f4;
+  display: flex;
+  padding: 12px 24px;
+  margin: 0;
 }
 
 .breadcrumb a {
-    color: #1b2c3a;
+  color: #1b2c3a;
+  text-decoration: none;
+}
+
+/* Main content */
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+  box-sizing: border-box;
 }
 
 .article {
-    width: 90%;
-    background: white;
-    margin: 0em auto;
-    padding: 0em;
-    color: inherit;
+  width: 90%;
+  max-width: 1100px;
+  background: #fff;
+  margin: 1.25em auto;
+  padding: 0.5em;
+  color: inherit;
 }
 
 .article h1 {
-    font-weight: bold;
-    font-size: 1.5em;
-    background-color: inherit;
-    color: red;
-    width: 100%;
+  font-weight: bold;
+  font-size: 1.5em;
+  background-color: inherit;
+  color: red; /* keep or change as desired */
+  width: 100%;
 }
 
 .article p {
-    font-size: 1em;
+  font-size: 1em;
+  line-height: 1.5;
 }
 
+/* Footer container: use grid with explicit columns */
 .content-container {
-    margin: 0 auto;
-    max-width: 1400px;
-    display: grid;
+  margin: 0 auto;
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+  padding: 0 24px;
+  box-sizing: border-box;
 }
 
 .link-list-wcrp {
-    grid-column: 1/2;
-    grid-row: 1/3
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  list-style: none;
+  padding: 0;
 }
 
 .link-list-toao {
-    grid-column: 2/3;
-    grid-row: 1/3
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  list-style: none;
+  padding: 0;
 }
 
+/* Footer */
 .nav-footer {
-    padding: 48px 24px;
-    position: relative;
-    background-color: #1b2c3a;
-    color: #fff;
+  padding: 48px 24px;
+  position: relative;
+  background-color: #1b2c3a;
+  color: #fff;
 }
 
+.nav-footer ol,
+.nav-footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-footer ol li {
+  margin-bottom: 6px;
+}
+
+.nav-footer a {
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 0;
+  display: block;
+}
+
+/* License area */
 .license {
-    margin: 50px 0 30px;
-    padding: 30px 0 0;
-    border-top: 1px solid #f4f4f4;
-    grid-row: 6/7;
-    grid-column: 1/3;
+  margin: 50px 0 30px;
+  padding: 30px 0 0;
+  border-top: 1px solid #f4f4f4;
+  grid-row: 3 / 4;
+  grid-column: 1 / 3;
+  color: #fff;
 }
 
-.nav-footer ol a {
-    color: #fff;
-    padding: 10px 0;
-    display: block;
+/* Utility */
+ol, ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.wrapper {
+/* Focus styles (accessible) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #ffbf47;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Fallback focus for browsers without focus-visible support */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px dashed #ffbf47;
+  outline-offset: 3px;
+}
+
+/* Specific visual cue for menu and footer links */
+.main-menu a:focus-visible,
+.nav-footer a:focus-visible {
+  background-color: rgba(255, 191, 71, 0.12);
+  color: #fff;
+  box-shadow: 0 0 0 3px rgba(255, 191, 71, 0.12);
+}
+
+/* Logo focus treatment */
+.logo:focus-visible {
+  box-shadow: 0 0 0 4px rgba(255, 191, 71, 0.18);
+  border-radius: 6px;
+}
+
+/* Form elements */
+input:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+  box-shadow: 0 0 0 3px rgba(255, 191, 71, 0.12);
+  border-radius: 4px;
+}
+
+/* Thoughts List */
+.thoughts-list {
+  margin-top: 2rem;
+}
+
+.thought-entry {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.thought-entry:last-child {
+  border-bottom: none;
+}
+
+.thought-entry h2 {
+  margin: 0 0 0.5rem;
+}
+
+.thought-entry h2 a {
+  color: #1b2c3a;
+  text-decoration: none;
+}
+
+.thought-entry time {
+  display: block;
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 0.9em;
+}
+
+.thought-entry .summary {
+  margin: 0;
+  color: #333;
+}
+
+/* Individual Thought Page */
+.thought {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.thought-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.thought-header h1 {
+  margin: 0 0 0.5rem;
+  color: #1b2c3a;
+}
+
+.thought-header time {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.thought-content {
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+
+.thought-footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #dee2e6;
+}
+
+.prev-next {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.prev-next a {
+  color: #1b2c3a;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+}
+
+.back-to-thoughts {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  color: #1b2c3a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .header-main {
+    flex-wrap: wrap;
+    padding-bottom: 12px;
+  }
+
+  .logo {
+    flex: 0 0 auto;
     width: 100%;
+    max-width: 320px;
+  }
+
+  .page-header-main {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .main-menu {
+    width: 100%;
+  }
+
+  .main-menu ul {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .content-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .link-list-wcrp,
+  .link-list-toao {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .article {
+    width: 96%;
+  }
+  
+  .thought {
+    padding: 0 1rem;
+  }
+  
+  .thought-entry h2 {
+    font-size: 1.4em;
+  }
 }
