@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{TITLE} — WCRP Thoughts</title>
+  <meta name="description" content="{DESCRIPTION}">
+  <link rel="stylesheet" href="../css/site.css" type="text/css">
+</head>
+<body>
+  <header class="header-main" role="banner" aria-label="Site header">
+    <a class="logo" href="/" title="WCRP home" aria-label="WCRP home">
+      <img src="../media/logo/wcrp-svg.svg" alt="WCRP logo" width="396" height="auto">
+    </a>
+
+    <div class="page-header-main">
+      <nav class="main-menu" aria-label="Main navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="../about.html">About me</a></li>
+          <li><a href="../thoughts/" aria-current="true">Thoughts</a></li>
+          <li><a href="../contact.html">Contact me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="../index.html">Wartz's Contextual Reflections Page</a> &raquo;</li>
+      <li><a href="index.html">Thoughts</a> &raquo;</li>
+      <li aria-current="page">{TITLE}</li>
+    </ol>
+  </nav>
+
+  <main class="wrapper" role="main">
+    <article class="thought">
+      <header class="thought-header">
+        <h1>{TITLE}</h1>
+        <time datetime="{ISO-DATE}">{DISPLAY-DATE}</time>
+      </header>
+      
+      <div class="thought-content">
+        {CONTENT}
+      </div>
+      
+      <footer class="thought-footer">
+        <nav class="thought-nav">
+          <div class="prev-next">
+            <!-- Previous/Next links will be added when applicable -->
+            <!-- <a href="previous-post.html" class="prev">&laquo; Previous Thought</a> -->
+            <!-- <a href="next-post.html" class="next">Next Thought &raquo;</a> -->
+          </div>
+          <a href="index.html" class="back-to-thoughts">&uarr; Back to Thoughts</a>
+        </nav>
+      </footer>
+    </article>
+  </main>
+
+  <footer class="nav-footer" role="contentinfo">
+    <div class="content-container">
+      <ol class="link-list-wcrp">
+        <li><a href="../about.html">About me</a></li>
+        <li><a href="../contact.html">Contact Me</a></li>
+      </ol>
+      <ol class="link-list-toao">
+        <li><a href="">Github</a></li>
+        <li><a href="">Socials</a></li>
+      </ol>
+      <p class="license">&copy; 2004-2024 WCRP and individual contributors.</p>
+    </div>
+  </footer>
+</body>
+</html>

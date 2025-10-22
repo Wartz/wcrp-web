@@ -243,6 +243,97 @@ button:focus-visible {
   border-radius: 4px;
 }
 
+/* Thoughts List */
+.thoughts-list {
+  margin-top: 2rem;
+}
+
+.thought-entry {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.thought-entry:last-child {
+  border-bottom: none;
+}
+
+.thought-entry h2 {
+  margin: 0 0 0.5rem;
+}
+
+.thought-entry h2 a {
+  color: #1b2c3a;
+  text-decoration: none;
+}
+
+.thought-entry time {
+  display: block;
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 0.9em;
+}
+
+.thought-entry .summary {
+  margin: 0;
+  color: #333;
+}
+
+/* Individual Thought Page */
+.thought {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.thought-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.thought-header h1 {
+  margin: 0 0 0.5rem;
+  color: #1b2c3a;
+}
+
+.thought-header time {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.thought-content {
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+
+.thought-footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #dee2e6;
+}
+
+.prev-next {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.prev-next a {
+  color: #1b2c3a;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+}
+
+.back-to-thoughts {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  color: #1b2c3a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 /* Responsive adjustments */
 @media (max-width: 900px) {
   .header-main {
@@ -283,5 +374,13 @@ button:focus-visible {
 
   .article {
     width: 96%;
+  }
+  
+  .thought {
+    padding: 0 1rem;
+  }
+  
+  .thought-entry h2 {
+    font-size: 1.4em;
   }
 }
