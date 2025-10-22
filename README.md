@@ -86,7 +86,7 @@ This repository contains a `.drone.yml` pipeline (if present) that can build and
 
 ## License
 
-No license is included in this repository. If you intend to permit reuse, add a `LICENSE` file (for example `MIT` or `Apache-2.0`).
+This project is released under the MIT License — see the `LICENSE` file for full terms.
 
 ## Contact
 
