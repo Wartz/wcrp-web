@@ -30,19 +30,37 @@ content {
     color: inherit;
 }
 
-footer {
-}
 
 ul,ol {
     list-style: none;
     padding: 0;
 }
 
-ol.main-menu {
-    justify-content: space-around;
-    display: flex;
-    width: inherit;
-}
+
+.main-menu {
+    background-color: #333; /* Example background color */
+    padding: 10px; /* Example padding */
+  }
+  
+  .main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-menu li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .main-menu li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+  }
+  
+  .main-menu a {
+    color: white; /* Example text color */
+  }
+  
 
 ol.main-menu a {
     padding: 10px 0;
